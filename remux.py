@@ -46,13 +46,14 @@ def main():
     parser.add_argument('-u','--useorder', action='store_true')
     args=parser.parse_args()
 
-    inpath=args.path
-    outpath=args.outpath
+    
+
     tmdb.api_key = args.api
     uid=1000
     gid=1000
     # os.chown(path, uid, gid)
     if args.demux:
+        inpath=args.path
         os.chdir(inpath)
         t=fd('STREAM',inpath, '-t',"d",_tty_out=False)
         t=t.splitlines()
@@ -131,6 +132,8 @@ def main():
         export_xml(title)
         quit()
     if args.remux:
+        inpath=args.path
+        outpath=args.outpath
         os.chdir(inpath)
         t=fd('Mux',inpath, '-t',"d",_tty_out=False)
         t=t.splitlines()
