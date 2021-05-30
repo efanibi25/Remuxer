@@ -13,9 +13,9 @@ Create a BDMV: This will need to be done outside of this program
     - You can do other tasks like changing the title of a tracks
     - Do not change the file names unless you know what your doing, as that will break the remux command
 3. Call Remux
-   - remux.py --remux inpath
+   - remux.py --remux inpath outpath 
    - point to the directory that you want to process which again will be mux.{random}.{title}
-   - Will create a mkv in the path provided
+   - Will create a mkv in the path provided in outpatah
  
 
 
