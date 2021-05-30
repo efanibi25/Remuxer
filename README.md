@@ -30,4 +30,5 @@ Upcoming Changes
 -Allow for more Default Languages
 - More Options for Overall ease of Excluding or including of languages
 -Switch to YAML for increase readabilitly 
+- Try to increase user-friendlyness
 
