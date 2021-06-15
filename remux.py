@@ -31,7 +31,7 @@ from tmdbv3api import TMDb,Movie,TV
 movie=Movie()
 tv=TV()
 tmdb = TMDb()
-tmdb.api_key = 'f400773075f3800bb1c601f7f81f4b5e'
+
 def main():
     parser = argparse.ArgumentParser()
     parser = parser.add_argument('path')
